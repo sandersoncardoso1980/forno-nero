@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Forno Nero | Pizzaria artesanal a lenha</title>
+    <meta name="description" content="Forno Nero: pizza artesanal de massa lenta assada a lenha. Veja o cardápio e faça seu pedido pelo WhatsApp." />
+    <meta name="theme-color" content="#14100d" />
+    <meta property="og:title" content="Forno Nero | Uma experiência que começa antes da primeira fatia." />
+    <meta property="og:description" content="Pizza artesanal assada a lenha. Cardápio e pedido pelo WhatsApp." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' fill='%2314100d'/%3E%3Cpath d='M8 34V19a12 12 0 0 1 24 0v15Z' fill='none' stroke='%23c9a15b' stroke-width='2.4'/%3E%3Cpath d='M20 31c-4 0-6-2.6-6-5.4 0-3 3-4.6 3.6-8.6 3 1.8 4 3.6 4.4 5.4.8-.8 1-1.8.9-3 2.4 2 3.1 4 3.1 6.2 0 3-2.2 5.4-6 5.4Z' fill='%23b7361f'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,0..100,0..1;1,9..144,300..900,0..100,0..1&family=Hanken+Grotesk:wght@400;500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="./assets/app.css" />
+    <style>
+      /* Tela de abertura: evita flash branco enquanto GSAP/Lenis carregam. */
+      #boot { position: fixed; inset: 0; z-index: 200; display: grid; place-items: center; background: #14100d; color: #c9a15b; transition: opacity .7s ease, visibility .7s; }
+      #boot.is-done { opacity: 0; visibility: hidden; }
+      #boot svg { width: 56px; height: 56px; animation: bootpulse 1.4s ease-in-out infinite alternate; }
+      @keyframes bootpulse { from { opacity: .45; transform: translateY(2px) } to { opacity: 1; transform: translateY(-2px) } }
+      @media (prefers-reduced-motion: reduce) { #boot svg { animation: none } }
+    </style>
+  </head>
+  <body>
+    <div id="boot" aria-hidden="true">
+      <svg viewBox="0 0 40 40" fill="none">
+        <path d="M6 37V20a14 14 0 0 1 28 0v17Z" stroke="currentColor" stroke-width="2"/>
+        <path d="M20 33c-4.4 0-6.8-2.8-6.8-6 0-3.4 3.4-5.2 4-9.8 3.4 2 4.6 4 5 6 .9-.9 1.1-2 1-3.4 2.7 2.2 3.5 4.5 3.5 7.2 0 3.6-2.5 6-6.7 6Z" fill="#b7361f"/>
+      </svg>
+    </div>
+    <noscript>
+      <p style="padding:2rem;color:#efe4ce;background:#14100d;font-family:sans-serif">
+        O cardápio da Forno Nero precisa de JavaScript para funcionar. Ative-o no navegador ou peça direto pelo WhatsApp.
+      </p>
+    </noscript>
+    <div id="root"></div>
+    <script src="./assets/app.js" defer></script>
+  </body>
+</html>
