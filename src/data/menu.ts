@@ -49,7 +49,7 @@ export interface Drink {
 export type MenuItem = Pizza | Drink;
 
 export const CATEGORIES: Category[] = [
-  { id: 'classicas', label: 'Clássicas', tagline: 'A receita que a gente não mexe: poucos ingredientes, feitos com muito cuidado.' },
+  { id: 'classicas', label: 'Clássicas', tagline: 'A receita que a gente não mexer: poucos ingredientes, feitos com muito cuidado.' },
   { id: 'autorais', label: 'Autorais', tagline: 'Combinações da casa, pensadas para o fogo da lenha.' },
   { id: 'brancas', label: 'Brancas', tagline: 'Sem molho de tomate. Cremosas, aromáticas e leves.' },
   { id: 'doces', label: 'Doces', tagline: 'Para fechar a mesa com a mesma massa, em outra direção.' },
@@ -61,6 +61,7 @@ export const MENU: MenuItem[] = [
   {
     kind: 'pizza', id: 'marguerita', category: 'classicas', name: 'Marguerita',
     description: 'Tomate italiano amassado na hora, fior di latte, manjericão fresco e um fio de azeite.',
+    photo: '/media/hero.png',
     prices: { media: 52, grande: 64 }, badge: 'Mais pedida',
     recipe: { base: 'rossa', cheese: 'fior', toppings: [{ kind: 'basil', count: 7 }], seed: 11 },
   },
@@ -68,6 +69,7 @@ export const MENU: MenuItem[] = [
     kind: 'pizza', id: 'calabresa-nera', category: 'classicas', name: 'Calabresa Nera',
     description: 'Calabresa artesanal defumada na casa, cebola roxa, azeitona preta e muçarela.',
     prices: { media: 56, grande: 68 },
+    photo: '/media/calabreza.jpg',
     recipe: { base: 'rossa', cheese: 'fior', toppings: [{ kind: 'sausage', count: 14 }, { kind: 'onion', count: 12 }, { kind: 'olive', count: 10 }], seed: 23 },
   },
   {

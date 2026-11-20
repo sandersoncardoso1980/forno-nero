@@ -23877,7 +23877,7 @@
     grande: { label: "Grande", detail: "35 cm, 8 fatias" }
   };
   var CATEGORIES = [
-    { id: "classicas", label: "Cl\xE1ssicas", tagline: "A receita que a gente n\xE3o mexe: poucos ingredientes, feitos com muito cuidado." },
+    { id: "classicas", label: "Cl\xE1ssicas", tagline: "A receita que a gente n\xE3o mexer: poucos ingredientes, feitos com muito cuidado." },
     { id: "autorais", label: "Autorais", tagline: "Combina\xE7\xF5es da casa, pensadas para o fogo da lenha." },
     { id: "brancas", label: "Brancas", tagline: "Sem molho de tomate. Cremosas, arom\xE1ticas e leves." },
     { id: "doces", label: "Doces", tagline: "Para fechar a mesa com a mesma massa, em outra dire\xE7\xE3o." },
@@ -23891,6 +23891,7 @@
       category: "classicas",
       name: "Marguerita",
       description: "Tomate italiano amassado na hora, fior di latte, manjeric\xE3o fresco e um fio de azeite.",
+      photo: "/media/hero.png",
       prices: { media: 52, grande: 64 },
       badge: "Mais pedida",
       recipe: { base: "rossa", cheese: "fior", toppings: [{ kind: "basil", count: 7 }], seed: 11 }
@@ -23902,6 +23903,7 @@
       name: "Calabresa Nera",
       description: "Calabresa artesanal defumada na casa, cebola roxa, azeitona preta e mu\xE7arela.",
       prices: { media: 56, grande: 68 },
+      photo: "/media/calabreza.jpg",
       recipe: { base: "rossa", cheese: "fior", toppings: [{ kind: "sausage", count: 14 }, { kind: "onion", count: 12 }, { kind: "olive", count: 10 }], seed: 23 }
     },
     {
